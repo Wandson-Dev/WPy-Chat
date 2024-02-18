@@ -1,4 +1,3 @@
 requests
 colorama
-google-generariveai
-Pillow
+google-generativeai
