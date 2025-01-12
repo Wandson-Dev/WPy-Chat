@@ -1,7 +1,7 @@
-image:
-  align: "center"
-  alt: "C"
-  src: "https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png"
+image_html: |
+  <p align="center">
+    <img alt="Kiny-Painel" src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png">
+  </p>
 
 
 # WPy-Chat
