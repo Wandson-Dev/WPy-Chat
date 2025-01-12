@@ -33,7 +33,7 @@ Para o script funcionar, você deve acessar o site da API de modelos de Linguage
 3. **Execute o programa:** Use o seguinte comando no prompt de comando para iniciar o WPy-Chat:
 
     ```bash
-    python chat.py
+    python main.py
     ```
 
 4. **Script sem customizações:** Se preferir o script sem customizações, na pasta *to-devs*, você encontrará o **main.py**, sem modificações e direto ao ponto.
