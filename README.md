@@ -9,10 +9,7 @@ O **WPy-Chat** é um programa feito em Python que consiste em um chat entre o us
 
 O código utiliza a biblioteca *google-generativeai* para integrar esse modelo de linguagem.
 
-### Antes de executar o script, certifique-se de ter a chave de API necessária. 
-### Para obtê-la, acesse o site de API de modelos de Linguagem do Google 
-### [clicando aqui](https://aistudio.google.com/app/apikey) e gere gratuitamente um token. 
-### Em seguida, insira seu token na variável `API_KEY` no script.
+### Antes de executar o script, certifique-se de ter a chave de API necessária. Para obtê-la, acesse o site de API de modelos de Linguagem do Google [clicando aqui](https://aistudio.google.com/app/apikey) e gere gratuitamente um token. Em seguida, insira seu token na variável `API_KEY` no script.
 
 O arquivo **chat.py** está bem customizado. No entanto, se preferir o script sem customizações, dentro da pasta *to-devs*, você encontrará o **main.py**, sem modificações e direto ao ponto. Uso 100% livre!
 
