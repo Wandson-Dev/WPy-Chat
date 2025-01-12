@@ -1,3 +1,9 @@
+image:
+  align: "center"
+  alt: "C"
+  src: "https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png"
+
+
 # WPy-Chat
 
 O **WPy-Chat** é um programa feito em Python que consiste em um chat entre o usuário e um modelo de linguagem do Google, a IA Gemini. Com ela, você pode conversar com a IA ou integrá-la em seu projeto.
