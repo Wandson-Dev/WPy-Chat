@@ -7,11 +7,11 @@ import google.generativeai as genai
 
 init(autoreset=True)
 
-# Get Key
+# Obter chave da API
 with open('api-key', 'r') as keyGet:
     key = keyGet.read()
 
-# Variables for organization:
+# Variáveis para organização:
 notice = f"{Style.BRIGHT + Fore.BLUE}[ ! ] {Fore.RESET}"  # [ ! ] / [ ! ]
 
 def clear_terminal():
@@ -26,46 +26,46 @@ def clear_terminal():
     except:
         print("\n")
 
-# CONFIGURATION:
+# CONFIGURAÇÃO:
 API_KEY = key  # SUA-CHAVE-DE-API / YOUR-API-KEY
 
-# CONFIGURING THE CHATBOT:
+# CONFIGURANDO O CHATBOT:
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-pro')
 chat = model.start_chat(history=[])
 
-# Now let's start a chat between the user and the bot
+# Agora vamos iniciar uma conversa entre o usuário e o bot
 clear_terminal()
 sleep(1)
-print(f"{notice}The conversation history will be saved in {Fore.WHITE}historic.json")
+print(f"{notice}O histórico da conversa será salvo em {Fore.WHITE}historic.json")
 sleep(1)
-print(f"{notice}Type {Fore.WHITE}'exit' {Fore.RESET}to end the conversation whenever you want.\n")
+print(f"{notice}Digite {Fore.WHITE}'exit' {Fore.RESET}para terminar a conversa a qualquer momento.\n")
 sleep(1)
 
 while True:
-    # We'll use colorama for better visualization
-    user_message = input(f"{Style.BRIGHT + Fore.WHITE}You: {Fore.WHITE}")
+    # Vamos usar colorama para melhor visualização
+    user_message = input(f"{Style.BRIGHT + Fore.WHITE}Você: {Fore.WHITE}")
     if user_message.lower() == 'exit':
         sleep(1.1)
-        print(f"{notice}{Style.BRIGHT + Fore.WHITE}Ending the conversation.")
+        print(f"{notice}{Style.BRIGHT + Fore.WHITE}Finalizando a conversa.")
         sys.exit()
     else:
         try:
             msg = chat.send_message(f"{user_message}")
             pdf_input = ""
         except:
-            print(f"{Style.BRIGHT + Fore.RED}Error, maybe the AI didn't understand your prompt, try again...")
+            print(f"{Style.BRIGHT + Fore.RED}Erro, talvez a IA não tenha entendido seu prompt, tente novamente...")
             sleep(3)
             clear_terminal()
             continue
 
-        # Print the AI's response:
+        # Exibir a resposta da IA:
         try:
             response = msg.text
         except:
             response = ''.join(x for x in msg.parts)
 
-        response = f"{Style.BRIGHT + Fore.YELLOW}AI: {Fore.GREEN}{response}"
+        response = f"{Style.BRIGHT + Fore.YELLOW}IA: {Fore.GREEN}{response}"
         
         for _ in range(len(response)):
             response = re.sub(r'\*\*(.*?)\*\*', f'{Style.BRIGHT + Fore.YELLOW}\\1{Style.RESET_ALL}', response)

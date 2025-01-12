@@ -1,19 +1,23 @@
-# Sobre o WPy-Chat
+---
 
-O **WPy-Chat** é um programa feito em Python que consiste em um chat entre o usuário e um modelo de linguagem do Google, a IA Gemini.
+# WPy-Chat
+
+O **WPy-Chat** é um programa feito em Python que consiste em um chat entre o usuário e um modelo de linguagem do Google, a IA Gemini. Com ela, você pode conversar com a IA ou integrá-la em seu projeto.
 
 O código utiliza a biblioteca *google-generativeai* para integrar esse modelo de linguagem.
 
-Antes de executar o script, certifique-se de ter a Chave de API necessária. Para obtê-la, acesse o site de API de modelos de Linguagem do Google e gere gratuitamente um token. Em seguida, insira seu token na variável `API_KEY` no script.
+<!-- Antes de executar o script, certifique-se de ter a chave de API necessária. Para obtê-la, acesse o site de API de modelos de Linguagem do Google [clicando aqui](https://aistudio.google.com/app/apikey) e gere gratuitamente um token. Em seguida, insira seu token na variável `API_KEY` no script. -->
 
-O arquivo **chat.py** está bem customizado. No entanto, se preferir o script sem customizações, dentro da pasta *to-devs*, você encontrará o **main.py**, sem modificações e direto ao ponto.
+O arquivo **chat.py** está bem customizado. No entanto, se preferir o script sem customizações, dentro da pasta *to-devs*, você encontrará o **main.py**, sem modificações e direto ao ponto. Uso 100% livre!
 
 **Chave de API:**
-Para o script funcionar, você deve entrar no site de API de modelos de Linguagem do Google e gerar gratuitamente um token. Depois disso, no script, insira seu token na variável `API_KEY`.
+Para o script funcionar, você deve acessar o site da API de modelos de Linguagem do Google e gerar gratuitamente um token. Depois disso, insira seu token na variável `API_KEY` no script.
 
 ## Como instalar
 
 ### Windows:
+
+!["Imagem do Projeto W"](.assets/windows.jpg)
 
 1. **Baixe o código:** Clique no botão "Code" no GitHub e escolha a opção "Download ZIP". Extraia o conteúdo do arquivo ZIP para uma pasta de sua escolha.
 
@@ -55,6 +59,8 @@ Para o script funcionar, você deve entrar no site de API de modelos de Linguage
 
 ### Termux:
 
+!["Imagem do Projeto TL"](.assets/example.jpg)
+
 1. **Instale o Termux:** Baixe e instale o [Termux](https://play.google.com/store/apps/details?id=com.termux).
 
 2. **Abra o Termux:** Execute os seguintes comandos para instalar o Git e o Python:
@@ -81,17 +87,19 @@ Para o script funcionar, você deve entrar no site de API de modelos de Linguage
 5. **Execute o programa:** Utilize o seguinte comando para iniciar o WPy-Chat:
 
     ```bash
-    python chat-en.py ou chat-pt.py
+    python main.py ou main-en.py
     ```
 
 6. **Script sem customizações:** Para a versão sem modificações, dentro da pasta *to-devs*, você encontrará o **main.py**, direto ao ponto.
 
-## Multilingual Support
+## Suporte Multilíngue
 
-O código do **WPy-Chat** está disponível em Português (*chat-pt.py*) e Inglês (*chat-en.py*), mas a IA está disponível em qualquer linguagem. Atualmente, as strings do script estão disponíveis apenas em português e inglês. Em breve, será implementado um código unificado que traduzirá automaticamente o script para o idioma do ambiente em que está sendo executado. Aguarde por essa atualização para uma experiência ainda mais versátil.
+O código do **WPy-Chat** está disponível em Português (*main.py*) e Inglês (*main-en.py*), mas a IA está disponível em qualquer idioma. Atualmente, as strings do script estão disponíveis apenas em português e inglês. Em breve, será implementado um código unificado que traduzirá automaticamente o script para o idioma do ambiente em que está sendo executado. Aguarde por essa atualização para uma experiência ainda mais versátil.
 
 ---
 
 **Créditos:**
 Este script foi criado por **wandson.dev** e está disponível `gratuitamente` para uso.
-Instagram: [@wandson.dev](https://www.instagram.com/wandson.dev/)# WPy-Chat
+Instagram: [@wandson.dev](https://www.instagram.com/wandson.dev/)
+
+---
